@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="top-navigation">
+        <div class="side">
+            <div>
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="nav-item">
+                <input type="text" placeholder="Search" class="top-form">
+            </div>
+            <div class="nav-item">
+                <a href="">Pull requests</a>
+            </div>
+            <div class="nav-item">
+                <a href="">Issues</a>
+            </div>
+            <div class="nav-item">
+                <a href="">Codespaces</a>
+            </div>
+            <div class="nav-item">
+                <a href="">Marketplace</a>
+            </div>
+            <div class="nav-item">
+                <a href="">Explore</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tab">
+        <div>
+            <div id="profile">
+                <div id="profile-image">
+                    <img src="assets/user.svg" alt="">
+                </div>
+                <div class="smiley">
+                    <div>
+                        <i class="far fa-smile"></i>
+                    </div>
+                    <div class="text"></div>
+                </div>
+                <div class="username">
+                    Oluwadaminiola
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="tabs">
+                <div class="tab-item">
+                    <span class="icon">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </span>
+                    <span class="text">Overview</span>
+                </div>
+                <div class="tab-item active">
+                    <span class="icon"><img src="assets/repo.svg" alt=""></span>
+                    <span class="text">Repositories</span>
+                    <span id="badge"></span>
+                </div>
+                <div class="tab-item">
+                    <span class="icon">
+                        <ion-icon name="reader-outline"></ion-icon>
+                    </span>
+                    <span class="text">Projects</span>
+                </div>
+                <div class="tab-item">
+                    <span class="icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                    </span>
+                    <span class="text">Packages</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container">
+        <div>
+
+        </div>
+        <div>
+
+            <div class="search-container">
+                <input type="text" placeholder="Find a repository...." class="search-form">
+            </div>
+
+            <div class="length">
+                <span id="repo-length"></span>
+            </div>
+            <div id="list">
+                <div class="repo">
+                    <div>
+                        <p>
+                            <a class="repo-name" href="${item.url}">sdsd</a> <span class="privacy">Private</span>
+                        </p>
+                        <p class="description">new repo</p>
+
+                        <div class="details">
+                            <div>
+                                <span><i class="fas fa-circle" style="color: #000000;"></i></span>
+                                <span>HTML</span>
+                            </div>
+                            <div class="star">
+                                <span><i class="far fa-star"></i></span>
+                                <span>1</span>
+                            </div>
+                            <div class="branch">
+                                <span><i class="fas fa-code-branch"></i></span>
+                                <span>1</span>
+                            </div>
+                            <div class="update">
+                                <span>Updated 12 Dec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn-star">
+                            <span><i class="far fa-star"></i></span>
+                            Star
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src='js/main.js'></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
+
+</html>

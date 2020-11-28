@@ -1,0 +1,380 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-block-start: unset !important;
+    margin-block-end: unset !important;
+}
+
+#top-navigation {
+    background: #24292f;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top-navigation input.top-form {
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    background: transparent;
+}
+
+#top-navigation .side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+}
+
+#top-navigation .side div {
+    margin-right: 1em;
+}
+
+#top-navigation .side i {
+    color: #fff;
+    font-size: 26px;
+}
+
+#top-navigation .side .nav-item a {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+#tab {
+    padding-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 0.5px solid #eaecef;
+}
+
+#tab .tabs {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+#tab .tabs div,
+.details div {
+    margin-right: 1em;
+}
+
+#tab .tabs ion-icon {
+    color: #959da5;
+    font-size: 16px;
+}
+
+#tab .tabs .tab-item {
+    font-weight: 400;
+    font-size: 14px;
+    color: #24292e;
+    padding: 8px 16px;
+}
+
+#tab .tabs .tab-item.active {
+    color: #24292e;
+    font-weight: 600;
+    border-bottom: 3px solid #f9826c;
+}
+
+#tab .tabs .tab-item {
+    display: flex;
+    align-items: center;
+}
+
+#tab .tabs .tab-item .icon {
+    margin-top: +5px;
+    margin-right: 10px;
+}
+
+#tab .tabs .tab-item #badge {
+    color: #24292e;
+    padding: 0 6px;
+    background: rgba(209, 213, 218, 0.5);
+    border-radius: 2em;
+    font-weight: 500;
+    line-height: 18px;
+    font-size: 12px;
+    min-width: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#tab #profile {
+    position: absolute;
+    margin-left: 5vw;
+}
+
+#tab #profile-image {}
+
+#tab #profile-image img {
+    border-radius: 100%;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+}
+
+
+.smiley {
+    height: 38px;
+    width: 38px;
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04);
+    border: 1px solid #e1e4e8;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+    position: relative;
+    right: -240px;
+}
+
+.smiley:hover {
+    transition: .3s ease-in-out;
+    color: #0366d6;
+}
+
+.username {
+    font-size: 16px;
+    color: #24292e;
+    font-weight: 300;
+    margin-top: +50px;
+}
+
+#container {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+#container .search-container {
+    border-bottom: 1px solid #e1e4e8;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+
+#container input.search-form {
+    width: 97%;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    color: #24292e;
+}
+
+#container .length span {
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eaecef;
+}
+
+#container .length {
+    color: #24292e;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.repo {
+    display: flex;
+    flex-flow: row;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+p a.repo-name {
+    color: #0366d6;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.privacy {
+    border-radius: 20px;
+    padding: 3px 7px;
+    font-size: 12px;
+    margin-left: 1em;
+    border: 1px solid #e1e4e8;
+    color: #586069;
+    text-align: center;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 1em;
+    color: #586069;
+}
+
+.details {
+    display: flex;
+    flex-flow: row;
+    margin-top: 1em !important;
+}
+
+.details span {
+    color: #586069 !important;
+    font-size: 12px;
+}
+
+.btn-star {
+    border-radius: 4px;
+    font-size: 12px;
+    color: #24292e;
+    padding: 5px 10px;
+    border: 1px solid rgba(27, 31, 35, .15);
+    background: #fafbfc;
+    width: 62px;
+}
+
+
+@media(max-width: 1024px) {
+    .container {
+        max-width: 94vw;
+    }
+
+    #tab #profile #profile-image img {
+        height: 230px;
+        width: 230px;
+    }
+
+    .username {
+        font-size: 16px;
+        color: #24292e;
+        font-weight: 300;
+        margin-top: +30px;
+    }
+
+    .smiley {
+        right: -170px;
+        margin-top: -60px;
+    }
+}
+
+@media(max-width: 768px) {
+    #top-navigation .side .nav-item {
+        display: none;
+    }
+
+    #container {
+        max-width: 94vw;
+    }
+
+    input.search-form {
+        width: 95%;
+    }
+
+    #tab #profile #profile-image img {
+        height: 160px;
+        width: 160px;
+    }
+
+    .smiley {
+        right: -120px;
+        margin-top: -50px;
+    }
+
+    #tab .tabs div,
+    .details div {
+        margin-right: .5em;
+    }
+
+    #tab .tabs .tab-item {
+        padding: 8px;
+    }
+
+    #tab .tab-item .icon {
+        display: none;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+}
+
+
+@media(max-width: 430px) {
+    #tab {
+        grid-template-columns: unset;
+        width: 100%;
+    }
+
+    #tab #profile {
+        position: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    #tab #profile div {
+        margin-right: 1em;
+    }
+
+    #tab #profile #profile-image img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .username {
+        font-size: 16px;
+        color: #24292e;
+        font-weight: 300;
+        margin-top: unset;
+    }
+
+    .smiley {
+        display: none;
+    }
+
+    #container {
+        max-width: 94vw;
+        grid-template-columns: unset;
+    }
+
+
+    #container input.search-form {
+        width: 94%;
+    }
+
+    #list .repo {
+        display: flex;
+        flex-flow: row;
+        padding-top: unset;
+        padding-bottom: unset;
+        padding: 1em;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .details {
+        margin-top: 1em;
+    }
+
+    .description,
+    .btn-star,
+    .star,
+    .branch,
+    .update {
+        display: none;
+    }
+
+}
