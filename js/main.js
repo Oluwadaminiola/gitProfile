@@ -1,7 +1,6 @@
 // import { config } from "../config"
 const baseUrl = "https://api.github.com/graphql"
 var token = config.TOKEN
-const token2 = "8621d50403972bf6e5d05cd460091a00b17901a5"
 const query = {
     "query": `query { 
     user(login: "Oluwadaminiola"){
