@@ -1,5 +1,6 @@
+// import { config } from "../config"
 const baseUrl = "https://api.github.com/graphql"
-const token = "f4ffbcb3a64d757f14a0985868063f7ff0a0fb8f"
+var token = config.TOKEN
 const token2 = "8621d50403972bf6e5d05cd460091a00b17901a5"
 const query = {
     "query": `query { 
@@ -31,7 +32,7 @@ const query = {
 }
 const headers = {
     "Content-Type": "application/json",
-    Authorization: "bearer " + token2
+    Authorization: "bearer " + token
 }
 
 const getDate = (date) => {
